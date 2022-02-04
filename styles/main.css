@@ -48,7 +48,7 @@ header {
     border-color: var(--color-l3, #d4c9c1);
     width: 100%;
     height: 25vw;
-    background-image: url("/img/header-banner-2.jpg");
+    background-image: url("../img/header-banner-2.jpg");
     background-position: center;
     background-size: 50vw;
     position: relative;
