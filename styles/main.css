@@ -193,10 +193,12 @@ main {
     }
 
     i {
-        top: 60px;
+        /* top: 60px; */
         font-size: 30px!important;
         height: 30px!important;
         color: var(--color-l3, #d4c9c1);
+        right: 0px!important;
+        border: none!important;
     }
 
     .layout-blog {
