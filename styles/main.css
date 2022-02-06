@@ -37,6 +37,10 @@ body {
     margin: 0;
 }
 
+.small-font {
+    font-size: var(--font-s3);
+}
+
 .pb4 {
     padding-bottom: 4%;
 }
@@ -63,6 +67,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.blog-banner {
+    background-position: center;
+    background-size: 50vw;
+    background-repeat: no-repeat;
 }
 
 .profile-picture {
@@ -107,6 +117,12 @@ main {
     position: relative;
 }
 
+.row-gap-blog {
+    row-gap: 10px;
+    padding: 40px 100px;
+    margin-top: 40px;
+}
+
 .blog-card {
     flex-basis: calc(50% - 50px - (20px x 2));
     margin: 0;
@@ -115,6 +131,12 @@ main {
     flex-shrink: 0;
     height: 300px;
     position: relative;
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+.blog-card:hover {
+    box-shadow: 10px 10px 20px var(--color-d1);
 }
 
 @media (max-width: 1900px) {
@@ -145,6 +167,12 @@ main {
         width: calc(50%);
     }
 
+    i {
+        font-size: 40px!important;
+        height: 40px!important;
+    }
+
+
 }
 
 @media (max-width: 600px) {
@@ -163,6 +191,26 @@ main {
     .id-card {
         width: calc(60%);
     }
+
+    i {
+        top: 60px;
+        font-size: 30px!important;
+        height: 30px!important;
+        color: var(--color-l3, #d4c9c1);
+    }
+
+    .layout-blog {
+        padding: 30px!important;
+    }
+
+    h1 {
+        font-size: var(--font-s1);
+    }
+
+    h4 {
+        font-size: var(--font-s2);
+    }
+
 }
 
 a, .blog-card {
@@ -193,7 +241,9 @@ article {
 
 .blog-info {
     /* border: black solid 2px; */
-    transform: translateY(calc(300px - 40px - 30px - 60px - 35px));
+    position: absolute;
+    bottom: 5px;
+    /* transform: translateY(calc(300px - 40px - 30px - 60px - 35px)); */
     height: 45px;
     background-color: var(--color-d2, #404c24);
     color: var(--color-l2, #cbccbc);
@@ -202,7 +252,7 @@ article {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    width: calc(100% + 20px);
+    width: calc(100% - 20px);
     margin-left: -20px;
     padding: 0 10px 10px 10px;
 }
@@ -214,4 +264,26 @@ ul, li {
 
 .blog-sub {
     margin-top: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+i {
+    font-size: 50px;
+    height: 50px;
+    border: var(--color-d1, #3e4437) solid 3px;
+    border-radius: 25%;
+    position: fixed;
+    bottom: 5vh;
+    right: 10vw;
+    padding: 5px;
+    transition-duration: 0.2s;
+    transition-property: color, background-color;
+}
+
+i:hover {
+    color: var(--color-l1, #a2ac94);
+    background-color: var(--color-d2, #404c24);
 }
