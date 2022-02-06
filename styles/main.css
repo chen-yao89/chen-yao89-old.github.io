@@ -13,7 +13,9 @@
 
 html {
     background-color: var(--color-d1, #3e4437);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 2px;
+    line-height: 25px;
 }
 
 body {
@@ -149,7 +151,7 @@ main {
     main {
         padding: 100px 25px 100px 25px;
         width: calc(100% - 50px);
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     :root {
