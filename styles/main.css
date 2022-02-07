@@ -84,6 +84,7 @@ header {
     z-index: 99;
     margin: 12vw 0 0 0;
     box-shadow: -5px -5px 15px 10px rgba(162, 172, 148, 0.6);
+    cursor: crosshair;
 }
 
 .id-card {
@@ -102,6 +103,13 @@ header {
     height: 100%;
     margin: 18vw 0 0 -11vw;
     box-shadow: 5px 5px 15px 10px rgba(162, 172, 148, 0.6);
+    transition-duration: 0.2s;
+    cursor: text;
+}
+
+.id-card:hover {
+    text-shadow: 2px 2px 5px var(--color-l1);
+    transform: translate(5px, 5px);
 }
 
 main {
